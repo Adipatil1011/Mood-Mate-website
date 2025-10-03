@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodMate - Daily Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>🌸 MoodMate 🌸</h1>
+    <p>Your daily emotional companion</p>
+  </header>
+
+  <main class="container">
+    <section class="quote">
+      <blockquote>
+        "Every day may not be good... but there's something good in every day."
+      </blockquote>
+    </section>
+
+    <section class="mood-picker" id="moodPicker">
+      <div class="mood" data-mood="Happy">
+        <img src="happy.png" alt="Happy">
+        <p>Happy</p>
+      </div>
+      <div class="mood" data-mood="Meh">
+        <img src="meh.png" alt="Meh">
+        <p>Meh</p>
+      </div>
+      <div class="mood" data-mood="Sad">
+        <img src="sad.png" alt="Sad">
+        <p>Sad</p>
+      </div>
+      <div class="mood" data-mood="Stressed">
+        <img src="stressed.png" alt="Stressed">
+        <p>Stressed</p>
+      </div>
+    </section>
+
+    <textarea id="journal" rows="5" placeholder="Write your thoughts or journal entry here..."></textarea>
+    <button id="saveBtn">Save Mood</button>
+    <p id="statusMsg"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MoodMate. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
